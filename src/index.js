@@ -1,6 +1,3 @@
-var nome = prompt('Digite seu nome: ');
-var nivel;
-var xp;
 
 //Se XP for menor do que 1.000 = Ferro
 //Se XP for entre 1.001 e 2.000 = Bronze
@@ -11,11 +8,51 @@ var xp;
 //Se XP for entre 9.001 e 10.000= Imortal
 //Se XP for maior ou igual a 10.001 = Radiante
 
-if xp < 1000 {
-    nivel = "Ferro";
-} 
-if xp = 1001 && < 2001 {
-    nivel = "Bronze"
-} 
+let nome = "Hulkk";  
+let xp = 1500;
+let nivel;
 
-console.log("O herói de nome " + nome + " está no nível de " nivel);
+switch (true){ 
+    
+    case xp < 1001:
+    nivel = "Ferro";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    case xp <= 2000:
+    nivel = "Bronze";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    case xp <= 5000:
+    nivel = "Prata";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    case xp <= 7000:
+    nivel = "Ouro";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+   
+
+    case xp <= 8000:
+    nivel = "Platina";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    case xp <= 9000:
+    nivel = "Ascendente";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    case xp <= 10000:
+    nivel = "Imortal";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+    default: 
+    nivel = "Radiante";
+    console.log("O Herói " + nome + " está no nível " + nivel + "!");
+    break;
+
+}
